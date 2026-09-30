@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Esc. de los Sueños">
+<meta name="mobile-web-app-capable" content="yes">
 <title>Escuela de los Sueños | Formación profética con la Profeta Rocío Rodríguez</title>
 <meta name="description" content="Escuela de los Sueños: formación profética para explorar el mundo de los sueños desde la fe, guiada por la Profeta Rocío Rodríguez. Inscríbete y sé parte de la próxima cohorte.">
 <meta name="keywords" content="escuela de los sueños, sueños y visiones, formación profética, Profeta Rocío Rodríguez, Desafiando los Conocimientos, ministerio profético, interpretación de sueños, cursos cristianos online">
@@ -430,5 +437,12 @@
   </footer>
 
 </main>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
+</script>
 </body>
 </html>
